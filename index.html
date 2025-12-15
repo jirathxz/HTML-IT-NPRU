@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+        margin: 20px;
+      }
+
+      h1,
+      h2 {
+        color: #dd1a6b;
+      }
+
+      ul {
+        list-style-type: none;
+        background-color: #dadada2c;
+        border-radius: 16px;
+        padding: 16px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        background: #DD1A6B;
+        background: linear-gradient(90deg, rgba(221, 26, 107, 1) 0%, rgba(255, 221, 235, 1) 100%);
+        margin: 8px 0;
+        border-radius: 12px;
+        padding: 12px;
+        transition: 0.5s;
+        width: auto; 
+      }
+
+      ul li a:hover {
+        transform: scale(1.015);
+      }
+
+      pre {
+        background-color: rgb(241, 241, 241);
+        border-left: #dd1a6b 5px solid;
+        font-size: 16px;
+        padding: 10px; 
+        border-radius: 16px;
+        box-shadow: 1px 8px 20px #00000031;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.041);
+        margin-top: 50px;
+        padding: 10px;
+        text-align: center;
+        color: #868686;
+        border-radius: 24px;
+      }
+
+      .topButton {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid #dd1a6b;
+        color: #dd1a6b;
+        padding: 0.3rem;
+        border-radius: 16px;
+        text-align: center;
+        align-items: center;
+        width: 100px;
+        margin: 10px 0;
+      }
+
+      .topButton:hover {
+          background-color: #dd1a6b;
+          color: white;
+      }
+
+      a {
+        text-decoration: none;
+        color: #dd1a6b;
+      }
+
+      .container {
+        border: 2px solid #d1bbbb77;
+        padding: 24px;
+        border-radius: 16px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .hi-title {
+        background-color: #fff;
+        padding: 6px;
+        color: #dd1a6b;
+        border-radius: 16px;
+        font-weight: bold;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+    <h1 id="top">HTML Tutorial</h1>
+    <p>
+      Welcome to the HTML tutorial. Click on the topics below to start learning:
+    </p>
+    <h2>Topics</h2>
+    <ul>
+        <li><a href="#introduction">Introduction to HTML</a></li>
+        <li><a href="#structure">HTML Document Structure</a></li>
+        <li><a href="#heading">Heading</a></li>
+        <li><a href="#paragraph">Paragraph</a></li>
+        <li><a href="#formatting">Text Formatting</a></li>
+        <li><a href="#links">Creating Links</a></li>
+        <li><a href="#lists">Lists (Ordered and Unordered)</a></li>
+        <li><a href="#images">Adding Images</a></li>
+        <li><a href="#tables">Creating Tables</a></li>
+        <li><a href="#forms">HTML Forms</a></li>
+        <li><a href="#embedding">Embedding Multimedia (Audio & Video)</a></li>
+        <li><a href="#semantic">Semantic HTML</a></li>
+        <li><a href="#workshop">Workshop</a></li>
+    </ul>
+    <hr>
+    
+    <h2 id="introduction">Introduction to HTML</h2>
+    <pre>
+    - HTML stands for Hyper Text Markup Language
+    - HTML is the standard markup language for creating Web pages
+    - HTML describes the structure of a Web page
+    - HTML consists of a series of elements
+    - HTML elements tell the browser how to display the content
+    - HTML elements are represented by tags
+    - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+    - Browsers do not display the HTML tags, but use them to render the content of the page
+    - HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages
+    - HTML is not a programming language, but a markup language
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="structure">HTML Document Structure</h2>
+    <p>An HTML document has the following basic structure...</p>
+    <pre>
+    คำอธิบาย:
+    &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
+    &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด
+    &lt;head&gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น &lt;title&gt; ชื่อหน้าเว็บ
+    &lt;body&gt;: ส่วนที่จะแสดงผลบนหน้าเว็บ
+
+    องค์ประกอบสำคัญของ HTML
+    แท็ก (Tags):
+    - แท็กเริ่มต้น (Opening Tag): เช่น &lt;h1&gt;
+    - แท็กปิด (Closing Tag): เช่น &lt;/h1&gt;
+
+    แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก
+    - ใช้เพื่อกำหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height
+
+    ตัวอย่าง:
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;img src="image.jpg" alt="A description of the image"&gt;
+    </pre>        
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="heading">Heading</h2>
+    <a href="W03_01_heading.html">workshop</a>
+    <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
+    <pre>
+    - &lt;h1&gt;: Heading 1
+    - &lt;h2&gt;: Heading 2
+    - &lt;h3&gt;: Heading 3
+    - &lt;h4&gt;: Heading 4
+    - &lt;h5&gt;: Heading 5
+    - &lt;h6&gt;: Heading 6
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="paragraph">Paragraph</h2>
+    <a href="index.html">workshop</a>
+    <pre>- &lt;p&gt;: Paragraph</pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="formatting">Text Formatting</h2>
+    <a href="index.html">workshop</a>
+    <p>HTML formatting elements...</p>
+    <pre>
+    - &lt;b&gt;: Bold text
+    - &lt;strong&gt;: Important text
+    - &lt;i&gt;: Italic text
+    - &lt;em&gt;: Emphasized text
+    - &lt;u&gt;: Underline text
+    - &lt;ins&gt;: Inserted text
+    - &lt;del&gt;: Deleted text
+    - &lt;s&gt;: Strikethrough text
+    - &lt;strike&gt;: Strikethrough text
+    - &lt;small&gt;: Smaller text
+    - &lt;big&gt;: Big text
+    - &lt;mark&gt;: Marked/highlighted text
+    - &lt;sub&gt;: Subscript text
+    - &lt;sup&gt;: Superscript text
+    - &lt;blockquote&gt;: Block quotation
+    - &lt;q&gt;: Inline quotation
+    - &lt;code&gt;: Code snippet
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="links">Creating Links</h2>
+    <a href="index.html">workshop</a>
+    <p>HTML links are defined with the &lt;a&gt; tag...</p>
+    <pre>
+    - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
+    
+    The href attribute specifies the URL of the page the link goes to.
+    The target attribute specifies where to open the linked document:
+    - _self: Open the linked document in the same window/tab
+    - _blank: Open the linked document in a new window/tab
+    - _parent: Open the linked document in the parent frame
+    - _top: Open the linked document in the full body of the window
+    
+    Anchor links:
+    - Use the href attribute with the # symbol to link to a specific part of the page
+    - Use the id attribute to define the section to link to
+    - Example: &lt;a href="#section"&gt;Go to Section&lt;/a&gt;
+    - Example: &lt;h3 id="section"&gt;This is the Section&lt;/h3&gt;
+    
+    Email links:
+    - Use the mailto: prefix to create an email link
+    - Example: &lt;a href="mailto:support@example.com"&gt;email us&lt;/a&gt;
+    
+    Download links:
+    - Use the download attribute to create a download link
+    - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="lists">Lists (Ordered and Unordered)</h2>
+    <a href="index.html">workshop</a>
+    <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
+    <pre>
+    - &lt;ul&gt;: Unordered list
+    - &lt;ol&gt;: Ordered list
+    - &lt;li&gt;: List item
+    
+    Unordered list Example:
+    &lt;ul&gt;
+      &lt;li&gt;Coffee&lt;/li&gt;
+      &lt;li&gt;Tea&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    Ordered list Example:
+    &lt;ol&gt;
+      &lt;li&gt;Coffee&lt;/li&gt;
+      &lt;li&gt;Tea&lt;/li&gt;
+    &lt;/ol&gt;
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="images">Adding Images</h2>
+    <a href="index.html">workshop</a>
+    <p>HTML images are defined with the &lt;img&gt; tag...</p>
+    <pre>
+    - &lt;img src="url" alt="description"&gt;
+    
+    Attributes:
+    - src: URL of the image
+    - alt: Description of the image
+    - width/height: Size of the image
+    
+    Flex box Gallery Example:
+    .gallery {
+      display: flex;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="tables">Creating Tables</h2>
+    <a href="index.html">workshop</a>
+    <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
+    <pre>
+    - &lt;table&gt;: Table
+    - &lt;tr&gt;: Table row
+    - &lt;th&gt;: Table header
+    - &lt;td&gt;: Table data/cell
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="forms">HTML Forms</h2>
+    <a href="index.html">Workshop 1</a>&nbsp;<a href="index.html">Workshop 2</a>
+    <p>HTML forms are defined with the &lt;form&gt; tag...</p>
+    <pre>
+    หัวข้อเกี่ยวกับฟอร์ม
+    
+    1. โครงสร้างพื้นฐานของฟอร์ม
+    - &lt;form&gt;: ใช้เป็นตัวครอบข้อมูลในฟอร์ม
+    - action และ method (GET/POST): การกำหนดปลายทางและวิธีส่งข้อมูล
+    
+    2. ชนิดของอินพุต (Input Types)
+    - &lt;input&gt;: ชนิดต่าง ๆ เช่น text, password, email, number, radio, checkbox, date, file
+    - &lt;textarea&gt;: ช่องข้อความขนาดใหญ่
+    - &lt;select&gt; และ &lt;option&gt;: เมนูแบบเลื่อนลง
+    - &lt;datalist&gt;: รายการตัวเลือกที่กำหนดไว้ล่วงหน้า
+    - &lt;optgroup&gt;: กลุ่มตัวเลือก
+    - &lt;fieldset&gt; และ &lt;legend&gt;: กลุ่มข้อมูลที่เกี่ยวข้อง
+    
+    3. ปุ่มในฟอร์ม
+    - &lt;button&gt;: ปุ่มทั่วไป
+    - &lt;input type="submit"&gt; และ &lt;input type="reset"&gt;: ปุ่มส่งและล้างข้อมูล
+    - &lt;input type="button"&gt;: ปุ่มทั่วไป
+    - &lt;input type="image"&gt;: ปุ่มรูปภาพ
+    - &lt;input type="file"&gt;: ปุ่มอัพโหลดไฟล์
+    
+    4. การจัดการป้ายกำกับ (Labels)
+    - &lt;label&gt;: เพื่อเชื่อมกับ &lt;input&gt; (ช่วยเพิ่มการเข้าถึง)
+    - for: ระบุ id ของอินพุตที่เกี่ยวข้อง
+    
+    5. การตรวจสอบข้อมูล (Validation)
+    - คุณสมบัติเช่น required, min, max, pattern
+    - การใช้ JavaScript เพื่อทำการตรวจสอบ
+    
+    6. ฟอร์มแบบสมัยใหม่ (HTML5)
+    - placeholder: ตัวอย่างข้อความในช่องอินพุต
+    - autofocus: ให้ฟอร์มเริ่มต้นโฟกัส
+    
+    7. การส่งฟอร์ม (Form Submission)
+    - การส่งข้อมูลไปยังเซิร์ฟเวอร์
+    - การใช้ JavaScript (เช่น onsubmit)
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="embedding">Embedding Multimedia (Audio & Video)</h2>
+    <p>No Subtitle</p>
+    <pre>
+    Nothing here...
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+
+    <h2 id="semantic">Semantic HTML</h2>
+    <a href="index.html">workshop</a>
+    <p>Semantic HTML elements clearly define the content of a web page...</p>
+    <pre>
+    - &lt;header&gt;: Defines a header for a document or section
+    - &lt;nav&gt;: Defines navigation links
+    - &lt;section&gt;: Defines a section in a document
+    - &lt;article&gt;: Defines an article
+    - &lt;aside&gt;: Defines content aside from the page content
+    - &lt;footer&gt;: Defines a footer for a document or section
+    </pre>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+    <h1 id="workshop">My Workshop</h1>
+    <ul>
+      <li><a href=""><span class="hi-title">Workshop 01</span>Rabbit</a></li>
+      <li><a href=""><span class="hi-title">Workshop 02</span>Login</a></li>
+    </ul>
+    <a href="#top" class="topButton">TOP</a>
+    <hr>
+    <a href="https://www.w3schools.com/html/">Learn more about HTML</a>
+    </div>
+    <footer>&copy; HTML Tutorial By Jiramate Thongpleaw 67/44 674230013</footer>
+  </body>
+</html>
