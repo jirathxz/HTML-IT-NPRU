@@ -4,103 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tutorial</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        line-height: 1.6;
-        margin: 20px;
-      }
-
-      h1,
-      h2 {
-        color: #dd1a6b;
-      }
-
-      ul {
-        list-style-type: none;
-        background-color: #dadada2c;
-        border-radius: 16px;
-        padding: 16px;
-      }
-
-      ul li a {
-        text-decoration: none;
-        color: #fff;
-        display: block;
-        background: #DD1A6B;
-        background: linear-gradient(90deg, rgba(221, 26, 107, 1) 0%, rgba(255, 221, 235, 1) 100%);
-        margin: 8px 0;
-        border-radius: 12px;
-        padding: 12px;
-        transition: 0.5s;
-        width: auto; 
-      }
-
-      ul li a:hover {
-        transform: scale(1.015);
-      }
-
-      pre {
-        background-color: rgb(241, 241, 241);
-        border-left: #dd1a6b 5px solid;
-        font-size: 16px;
-        padding: 10px; 
-        border-radius: 16px;
-        box-shadow: 1px 8px 20px #00000031;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-      }
-
-      footer {
-        background-color: rgba(0, 0, 0, 0.041);
-        margin-top: 50px;
-        padding: 10px;
-        text-align: center;
-        color: #868686;
-        border-radius: 24px;
-      }
-
-      .topButton {
-        display: block;
-        box-sizing: border-box;
-        border: 2px solid #dd1a6b;
-        color: #dd1a6b;
-        padding: 0.3rem;
-        border-radius: 16px;
-        text-align: center;
-        align-items: center;
-        width: 100px;
-        margin: 10px 0;
-      }
-
-      .topButton:hover {
-          background-color: #dd1a6b;
-          color: white;
-      }
-
-      a {
-        text-decoration: none;
-        color: #dd1a6b;
-      }
-
-      .container {
-        border: 2px solid #d1bbbb77;
-        padding: 24px;
-        border-radius: 16px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .hi-title {
-        background-color: #fff;
-        padding: 6px;
-        color: #dd1a6b;
-        border-radius: 16px;
-        font-weight: bold;
-        margin-right: 8px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
@@ -110,7 +14,7 @@
       Welcome to the HTML tutorial. Click on the topics below to start learning:
     </p>
     <h2>Topics</h2>
-    <ul>
+    <ul class="topics">
         <li><a href="#introduction">Introduction to HTML</a></li>
         <li><a href="#structure">HTML Document Structure</a></li>
         <li><a href="#heading">Heading</a></li>
@@ -168,7 +72,7 @@
     <hr>
 
     <h2 id="heading">Heading</h2>
-    <a href="W03_01_heading.html">workshop</a>
+    <a href="W03_01_heading.html" class="learnM">ดูเพิ่มเติม</a>
     <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
     <pre>
     - &lt;h1&gt;: Heading 1
@@ -182,13 +86,13 @@
     <hr>
 
     <h2 id="paragraph">Paragraph</h2>
-    <a href="index.html">workshop</a>
+    <a href="index.html" class="learnM">ดูเพิ่มเติม</a>
     <pre>- &lt;p&gt;: Paragraph</pre>
     <a href="#top" class="topButton">TOP</a>
     <hr>
 
     <h2 id="formatting">Text Formatting</h2>
-    <a href="index.html">workshop</a>
+    <a href="W03_02_formatting.html" class="learnM">ดูเพิ่มเติม</a>
     <p>HTML formatting elements...</p>
     <pre>
     - &lt;b&gt;: Bold text
@@ -213,7 +117,7 @@
     <hr>
 
     <h2 id="links">Creating Links</h2>
-    <a href="index.html">workshop</a>
+    <a href="index.html" class="learnM">ดูเพิ่มเติม</a>
     <p>HTML links are defined with the &lt;a&gt; tag...</p>
     <pre>
     - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
@@ -243,7 +147,7 @@
     <hr>
 
     <h2 id="lists">Lists (Ordered and Unordered)</h2>
-    <a href="index.html">workshop</a>
+    <a href="index.html" class="learnM">ดูเพิ่มเติม</a>
     <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
     <pre>
     - &lt;ul&gt;: Unordered list
@@ -266,7 +170,7 @@
     <hr>
 
     <h2 id="images">Adding Images</h2>
-    <a href="index.html">workshop</a>
+    <a href="index.html" class="learnM">ดูเพิ่มเติม</a>
     <p>HTML images are defined with the &lt;img&gt; tag...</p>
     <pre>
     - &lt;img src="url" alt="description"&gt;
@@ -291,7 +195,7 @@
     <hr>
 
     <h2 id="tables">Creating Tables</h2>
-    <a href="index.html">workshop</a>
+    <a href="index.html" class="learnM">ดูเพิ่มเติม</a>
     <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
     <pre>
     - &lt;table&gt;: Table
@@ -355,7 +259,7 @@
     <hr>
 
     <h2 id="semantic">Semantic HTML</h2>
-    <a href="index.html">workshop</a>
+    <a href="index.html" class="learnM">ดูเพิ่มเติม</a>
     <p>Semantic HTML elements clearly define the content of a web page...</p>
     <pre>
     - &lt;header&gt;: Defines a header for a document or section
@@ -368,14 +272,15 @@
     <a href="#top" class="topButton">TOP</a>
     <hr>
     <h1 id="workshop">My Workshop</h1>
-    <ul>
+    <ul class="topics">
       <li><a href=""><span class="hi-title">Workshop 01</span>Rabbit</a></li>
       <li><a href=""><span class="hi-title">Workshop 02</span>Login</a></li>
     </ul>
     <a href="#top" class="topButton">TOP</a>
     <hr>
     <a href="https://www.w3schools.com/html/">Learn more about HTML</a>
-    </div>
     <footer>&copy; HTML Tutorial By Jiramate Thongpleaw 67/44 674230013</footer>
+    </div>
+    
   </body>
 </html>
