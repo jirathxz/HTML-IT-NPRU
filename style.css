@@ -71,9 +71,9 @@ ul li a:hover {
 }
 
 pre {
-  background: #ffffff07;
+  background: #8f8bff09;
   border: 1px solid #ffffff25;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   border-left: #635ef2 5px solid;
   font-size: 12px;
   padding: 10px;
@@ -240,4 +240,51 @@ mark {
 .card.module-highlight b, .card.module-highlight em, .card.module-highlight u, .card.module-highlight small, .card.module-highlight s {
   margin: 0 5px;
   text-shadow: 0 0 10px #ff5858;
+}
+
+.in-card {
+  background-color: #ffffff0e;
+  border: 1px solid #ffffff24;
+  padding: 15px 30px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+
+code {
+  padding: 4px;
+  background-color: #fffff018;
+}
+
+.btn {
+  display: block;
+  width: 12rem;
+  box-sizing: border-box;
+  border: 1px solid #ffffff25;
+  backdrop-filter: blur(10px);
+  color: #ffffff9d;
+  padding: 0.4rem;
+  background: transparent;
+  box-shadow: 0 0 20px #ffffff1c;
+  border-radius: 0.6rem;
+  text-align: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #635ef2 0%, #ffd0d0 100%);
+  color: white;
+  transform: scale(1.01);
+  box-shadow: 0 0 100px #635ef2;
+}
+
+.btn-yellow:hover {
+  background: linear-gradient(90deg, #f2be5e 0%, #ffd0d0 100%);
+  color: white;
+  transform: scale(1.01);
+  box-shadow: 0 0 100px #f2be5e;
+}
+
+small {
+  opacity: 0.8;
 }

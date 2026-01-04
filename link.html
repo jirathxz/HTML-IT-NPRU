@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heading</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Workshop: Various Links</h1>
+      <p class="subtitle">
+        เรียนรู้ลิงก์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด
+      </p>
+      <!-- Section 1 -->
+      <section class="card">
+        <h2>1. External Links</h2>
+        <div class="in-card">
+            <a href="">Visit Wikipedia</a>
+            <p><code>target="_blank"</code> เปิดลิงก์ในแท็บใหม่</p>
+        </div>
+        <div class="in-card">
+            <a href="">Visit Google</a>
+            <p><code>target="_self"</code> เปิดลิงก์ในหน้าเดิม</p>
+        </div>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="card">
+        <h2>2. Internal Links & Anchor Links</h2>
+        <pre>
+    &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+    &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+    &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;</pre>
+    
+      <a href="">Click a jump</a>
+      <h3>This is the jump target</h3>
+      </section>
+
+      <section class="card">
+        <h2>3. Email Links</h2>
+        <pre>
+&lt;a href="mailto:student@example.com?subject=Hello"&gt;
+  Send an Email
+&lt;/a&gt;</pre>
+        <a href="mailto:student@example.com?subject=Hello">Send an Email</a>
+      </section>
+
+      <section class="card">
+        <h2>4. Download Links</h2>
+        <pre>&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
+        <a href="files/sample.txt" download class="btn btn-yellow">Download Text File</a>
+        <small class="">ต้องมีไฟล์ในโฟลเดอร์จึงจะดาวน์โหลดได้จริง</small>
+      </section>
+
+      <section class="card">
+        <h2>5. Button Link</h2>
+        <p>ลิงห์ที่ออกแบบให้คล้ายปุ่ม เหมาะกับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+        <pre>
+&lt;a href="https://www.example.com" class="btn-link"&gt;
+  Visit Website
+&lt;/a&gt;</pre>
+        <a href="https://www.example.com" class="btn">Visit Website</a>
+        <p>สร้างปุ่มด้วยแท็ก&nbsp;&nbsp;<code>button</code></p>
+        <pre>&lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+- มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+- ผูกกับ DOM (document) โดยตรง
+&lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+- นิยมใช้มากกว่า
+- เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+- ผูกกับ window โดยตรง</pre>
+            <button>HTML Tutorial</button><button>Visit Website</button>
+      </section>
+
+      <section class="card">
+        <h2>6. Image Link</h2>
+        <p>คลิกที่รูปภาพเพื่อเปิดลิงก์</p>
+        <pre>
+&lt;a href="https://youtube.com"&gt;
+  &lt;img src="images/sample.jpg" width="250"&gt;
+&lt;/a&gt;</pre>
+        <br>
+        <a href="https://youtube.com" class="image-link" target="_blank">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo-r43ybnhmVcR_tlgFY2TAvAVmVOW732AvT9CfShqQ_tML63J" alt="YouTube" width="250" style="border-radius: 1rem;">
+        </a>
+        <p class="note">::before หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น <code>images/photo.jpg</code></p>
+      </section>
+      
+      <a class="back-link" href="index.html"> &larr; Back to HTML Tutorial</a>
+    </div>
+  </body>
+</html>
