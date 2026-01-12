@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+:root {
+    --primary-button-color: linear-gradient(90deg, rgb(255, 136, 136) 0%, rgb(237, 83, 137) 100%);
+    --color-border-radius: #00000030;
+    --theme-primary-color: #6685ff;
+    --theme-secondary-color: #afcdff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Google Sans', sans-serif;
+}
+
+body {
+    background-color: #1a1b25;
+    color: #fff;
+}
+
+/* Container Styles */
+
+.container {
+    padding: 2rem 15rem;
+    margin: 2rem;
+    border: 1px solid var(--color-border-radius);
+    border-radius: 24px;
+    margin: 130px auto;
+}
+
+/* Header Styles */
+
+header {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2d40;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 2px solid #ffffff1b;
+}
+
+header p {
+    color: #ffffffc2;
+}
+
+header h1 {
+    background: linear-gradient(90deg, var(--theme-primary-color) 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Card Styles */
+
+.card {
+    background-color: #2c2d40;
+    border-radius: 16px;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    line-height: 1.8;
+    box-shadow: 0 0 100px #6685ff1a;
+}
+
+.card h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(90deg, var(--theme-primary-color) 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #6685ff3e;
+    color: #6685ff;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card .note {
+    color: #6685ff;
+    background: linear-gradient(0deg, #6685ff90 0%, transparent 50%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+.card.module-1 h2 {
+    background: linear-gradient(90deg, #ff6666 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-1 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #ff66663e;
+    color: #ff6666;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.card.module-1 .note {
+    color: #ff6666;
+    background: linear-gradient(0deg, #ff666630 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-2 h2 {
+    background: linear-gradient(90deg, #ffd966 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-2 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #ffd9663e;
+    color: #ffd966;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-2 .note {
+    color: #ffd966;
+    background: linear-gradient(0deg, #ffd96630 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-3 h2 {
+    background: linear-gradient(90deg, #bdff66 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-3 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #bdff663e;
+    color: #bdff66;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-3 .note {
+    color: #ffd966;
+    background: linear-gradient(0deg, #ffd96630 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-4 h2 {
+    background: linear-gradient(90deg, #66ffc9 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-4 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #66ffc93e;
+    color: #66ffc9;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-4 .note {
+    color: #66ffc9;
+    background: linear-gradient(0deg, #66ffc930 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-5 h2 {
+    background: linear-gradient(90deg, #66f7ff 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-5 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #66f7ff3e;
+    color: #66f7ff;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-5 .note {
+    color: #66f7ff;
+    background: linear-gradient(0deg, #66f7ff30 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-6 h2 {
+    background: linear-gradient(90deg, #6685ff 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-6 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #6685ff3e;
+    color: #6685ff;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-6 .note {
+    color: #6685ff;
+    background: linear-gradient(0deg, #6685ff30 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-7 h2 {
+    background: linear-gradient(90deg, #ab66ff 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-7 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #ab66ff3e;
+    color: #ab66ff;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-7 .note {
+    color: #ab66ff;
+    background: linear-gradient(0deg, #ab66ff30 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.card.module-8 h2 {
+    background: linear-gradient(90deg, #ff66f7 0%, #ebefff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card.module-8 .badge {
+    display: inline-block;
+    border-radius: 24px;
+    background-color: #ff66f73e;
+    color: #ff66f7;
+    font-weight: 600;
+    margin: 8px;
+    padding: 1px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card.module-8 .note {
+    color: #ff66f7;
+    background: linear-gradient(0deg, #ff66f730 0%, transparent 100%);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+/* Code Styles */
+
+code {
+    background-color: #6685ff1f;
+    padding: 0 3px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+/* Pre Styles */
+
+pre {
+    margin: 1rem 0;
+    background-color: #1a1b25;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #dae2ff;
+}
+
+
+/* Lesson Menu Styles    */
+
+.list-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 5px;
+    padding: 1rem 0;
+}
+
+.list-menu li a {
+    text-decoration: none;
+    background-color: #ffffff53;
+    color: #fff;
+    padding: 0.5rem 0.9rem;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.list-menu li a:hover {
+    color: #000;
+    background: #fff;
+}
+
+/* Group 1 */
+
+/* Group 2 */
+
+/* Group 3 */
+
+/* Group 4 */
+
+.obj-fit-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.obj-fit-image.contain {
+    object-fit: contain;
+}
+
+.obj-fit-image.fill {
+    object-fit: fill;
+}
+
+.obj-fit-image.cover {
+    object-fit: cover;
+}
+
+/* Group 5 */
+
+/* Group 6 */
+
+.back-link {
+    background-color: #ff666641;
+    color: #ff6666;
+    margin-top: 1rem;
+    padding: 8px;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.back-link:hover {
+    background-color: #ff6666;
+    color: #ffffff;
+    margin-top: 1rem;
+    padding: 8px;
+    border-radius: 24px;
+    text-decoration: none;
+}
+
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.gallery img { height: 120px; object-fit: cover; }
+
+img { max-width: 100%; height: auto; }
