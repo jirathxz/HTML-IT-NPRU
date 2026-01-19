@@ -38,14 +38,17 @@
             <p>รูปภาพใน HTML ใช้แท็ก <code>img</code>โดยต้องมี<code>src</code>และควรมี<code>alt</code>เสมอ</p>
             <pre>
 &lt;img src="images/photo.jpg" alt="ภาพตัวอย่าง"&gt;</pre>
-            <div class="img-small">
-                <img src="https://inwfile.com/s-ff/6cpxnk.jpg" alt="รูปภาพตัวอย่าง" width="50" height="50">
-            </div>
-            <div class="img-small">
-                <img src="https://inwfile.com/s-ff/6cpxnk.jpg" alt="รูปภาพตัวอย่าง" width="50" height="50">
-            </div>
-            <div class="img-small">
-                <img src="https://inwfile.com/s-ff/6cpxnk.jpg" alt="รูปภาพตัวอย่าง" width="50" height="50">
+            <div class="img-flex">
+
+                <div class="img-small start">
+                    <img src="https://inwfile.com/s-ff/6cpxnk.jpg" alt="รูปภาพตัวอย่าง" width="50" height="50">
+                </div>
+                <div class="img-small center">
+                    <img src="https://inwfile.com/s-ff/6cpxnk.jpg" alt="รูปภาพตัวอย่าง" width="50" height="50">
+                </div>
+                <div class="img-small end">
+                    <img src="https://inwfile.com/s-ff/6cpxnk.jpg" alt="รูปภาพตัวอย่าง" width="50" height="50">
+                </div>
             </div>
             <p class="note"> 📢 <b>alt</b> สำคัญมาก: ช่วย SEO + ใช้แทนภาพเมื่อโหลดไม่ได้ + ช่วยผู้ใช้ Screen Reader</p>
         </div>

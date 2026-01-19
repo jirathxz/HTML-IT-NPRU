@@ -267,3 +267,22 @@ img {
     height: 160px;
     object-fit: cover;
 }
+
+.img-small {
+    margin: 8px;
+}
+
+.img-small.start {
+    display: flex;
+    justify-content: start;
+}
+
+.img-small.center {
+    display: flex;
+    justify-content: center;
+}
+
+.img-small.end {
+    display: flex;
+    justify-content: end;
+}

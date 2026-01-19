@@ -5,7 +5,7 @@ body {
   color: #e2e2ea;
   line-height: 1.6;
   margin: 20px;
-  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlMjBfM2RfbW9kZXJuX3dhdmVfY3VydmVfYWJzdHJhY3RfaGFsZnRvbmVfZ3JhZGllbl8xZTJhY2M3Mi1jZTU3LTQ0NjItOGQzNS1lOTI4YzI5NzcxMTdfMS5qcGc.jpg");
+  background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/25119.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,7 +22,6 @@ h1 {
   color: transparent;
   text-align: center;
   padding: 1rem;
-  border-radius: 0.6rem;
 }
 
 h2 {
@@ -33,11 +32,12 @@ h2 {
   );
   background-clip: text;
   color: transparent;
+  text-shadow: 0px 0px 10px rgba(134, 130, 255, 0.462);
 }
 
 .topics {
   list-style-type: none;
-  border-radius: 0.6rem;
+  border-radius: 24px;
   padding: 16px;
 }
 
@@ -71,17 +71,15 @@ ul li a:hover {
 }
 
 pre {
-  background: #8f8bff09;
-  border: 1px solid #ffffff25;
-  backdrop-filter: blur(5px);
-  border-left: #635ef2 5px solid;
-  font-size: 12px;
-  padding: 10px;
-  border-radius: 0.6rem;
-  box-shadow: 0px 0px 30px #ffffff1c;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-family: "Kanit";
+    margin: 1rem 0;
+    background-color: #1a1b2598;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #dae2ff;
+    font-family: monospace;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .text-box {
@@ -105,7 +103,10 @@ footer {
 }
 
 .topButton {
-  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   border: 1px solid #ffffff25;
   backdrop-filter: blur(10px);
@@ -121,10 +122,9 @@ footer {
 }
 
 .topButton:hover {
-  background: linear-gradient(90deg, #ff5757 0%, #ffd0d0 100%);
-  color: white;
-  transform: scale(1.01);
-  box-shadow: 0 0 100px #f25e5e;
+  background: #fff;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 100px rgb(255, 255, 255);
 }
 
 a {
@@ -134,11 +134,8 @@ a {
 
 .container {
   background-color: #17171937;
-  backdrop-filter: blur(50px);
   padding: 24px;
   border-radius: 0.6rem;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .hi-title {
@@ -184,6 +181,7 @@ a {
   padding: 25px 30px;
   border-radius: 18px;
   margin-bottom: 25px;
+  backdrop-filter: blur(20px);
 }
 
 .card.module-highlight {
@@ -296,6 +294,12 @@ small {
 
 .btn-img:hover {
   transform: scale(1.05) rotate(360deg);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 25px;
 }
 
 /*  */
