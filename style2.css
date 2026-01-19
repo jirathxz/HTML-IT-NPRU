@@ -261,3 +261,9 @@ img {
     background-color: #ff6666;
     color: #ffffff;
 }
+
+.img-fixed {
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+}
