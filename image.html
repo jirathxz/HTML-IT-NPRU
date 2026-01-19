@@ -59,18 +59,19 @@
         <!-- For Group 3: Card 2: Resize & aspect -->
 
         <div class="card module-2">
-    <h2>2) Resize & Aspect Ratio <span class="badge">object-fit</span></h2>
-    <p>ถ้ากำหนดทั้งความกว้างและสูง ให้ใช้ <code>object-fit</code> เพื่อไม่ให้ภาพบิด</p>
-    <pre>
+            <h2>2) Resize & Aspect Ratio <span class="badge">object-fit</span></h2>
+            <p>ถ้ากำหนดทั้งความกว้างและสูง ให้ใช้ <code>object-fit</code> เพื่อไม่ให้ภาพบิด</p>
+            <pre>
 /* ครอปภาพให้พอดีกรอบ */
 .img-fixed {
     width: 260px;
     height: 160px;
     object-fit: cover;
 }</pre>
-    <img class="img-fixed" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="260" height="160" style="object-fit: cover;">
-    <p class="note">cover = ✨ครอปให้เต็มกรอบ, contain = เห็นภาพครบ (อาจมีขอบว่าง)</p>
-</div>
+            <img class="img-fixed" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="260"
+                height="160" style="object-fit: cover;">
+            <p class="note">cover = ✨ครอปให้เต็มกรอบ, contain = เห็นภาพครบ (อาจมีขอบว่าง)</p>
+        </div>
 
 
 
@@ -117,8 +118,10 @@
     alt="Banner"&gt;
 &lt;/a&gt;
             </pre>
-            <a href="https://www.google.com"><img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg"></a>
-            <p class="note">ใช้<code>target="_blank"</code> เมื่ออยากเปิดในแท็บใหม</p>
+            <a href="https://www.youtube.com"><img
+                    src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+                    class="image-link"></a>
+            <p class="note">📌 ใช้<code>target="_blank"</code> เมื่ออยากเปิดในแท็บใหม</p>
         </div>
 
 
@@ -134,12 +137,12 @@
 .gallery img { height: 120px; object-fit: cover; }</pre>
 
             <div class="gallery">
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
+                <img src="https://placehold.co/400x400?text=1" alt="Gallery 1">
+                <img src="https://placehold.co/400x400?text=2" alt="Gallery 2">
+                <img src="https://placehold.co/400x400?text=3" alt="Gallery 3">
+                <img src="https://placehold.co/400x400?text=4" alt="Gallery 4">
+                <img src="https://placehold.co/400x400?text=5" alt="Gallery 5">
+                <img src="https://placehold.co/400x400?text=6" alt="Gallery 6">
             </div>
 
             <p class="note">📌ถ้ารูปขนาดไม่เท่ากัน ใช้object-fit: cover;จะช่วยให้ดูสมํ่าเสมอ</p>
@@ -161,7 +164,8 @@
             </h2>
             <p>ทพให้ภาพไม่ล้นการ์ดและย่อขยายตามหน้าจอ </p>
             <pre>img { max-width: 100%; height: auto; } </pre>
-            <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="">
+            <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg"
+                alt="">
             <p class="note">💡เทคนิคนี้เป็นพื้นฐานสำคัญของเว็บ responsive</p>
         </div>
 
@@ -182,7 +186,8 @@
 &lt;figcaption&gt;รูปที่ 1: คำอธิบายภาพ&lt;/figcaption&gt;
 &lt;/figure&gt;</pre>
             <figure>
-                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg" alt="...">
+                <img src="https://e0.pxfuel.com/wallpapers/736/257/desktop-wallpaper-sea-ocean-waves-widescreen-16-9-background-2560-x-1440-sea.jpg"
+                    alt="...">
                 <figcaption>รูปที่ 1: คำอธิบายภาพ</figcaption>
             </figure>
             <p>ให้นักศึกษาทำหน้า"My Favorite Place/Product/Technology"โดยมีภาพอย่างน้อย 5 ภาพ และต้องมี 1) รูปแบบ
