@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JIRA.TH Blog</title>
-    <link rel="stylesheet" href="webblog.css">
+    <link rel="stylesheet" href="webBlog.css">
     <script src="https://kit.fontawesome.com/5efd6bd50f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- header -->
     <header class="header-site">
-        <div class="wrapper">
+        <div class="wrapper-header">
             <div class="header-inner">
-                <div class="website-name">
-                    <h2 class="title"><i class="fa-solid fa-asterisk"></i>&nbsp;JIRA-TH</h2>
-                    <p class="subtitle">รวมเนื้อหาเกี่ยวกับเทคโนโลยี AI น่าสนใจ</p>
+
+                <div class="left-header">
+                    <button id="sidebarBtn" class="sidebar-btn"><i class="fa-solid fa-bars"></i></button>
+                    <div class="website-name">
+                        <h2 class="title"><i class="fa-solid fa-asterisk"></i>&nbsp;JIRA-TH</h2>
+                        <p class="subtitle">รวมเนื้อหาเกี่ยวกับเทคโนโลยี AI น่าสนใจ</p>
+                    </div>
                 </div>
                 <div class="social-button">
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -27,34 +31,20 @@
         </div>
     </header>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="wrapper">
-            <ul>
-                <li><a href="" class="active"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
-                <li><a href=""><i class="fa-solid fa-hexagon-nodes"></i>&nbsp;AI Technology</a></li>
-                <li><a href=""><i class="fa-solid fa-robot"></i>&nbsp;Machine Learning</a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass-chart"></i>&nbsp;Deep Learning</a></li>
-                <li><a href=""><i class="fa-solid fa-toolbox"></i>&nbsp;AI Tools</a></li>
-                <li><a href=""><i class="fa-solid fa-newspaper"></i>&nbsp;AI News</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar-mobile">
-        <div class="wrapper">
-            <ul>
-                <li><a href="" class="active"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-hexagon-nodes"></i>></a></li>
-                <li><a href=""><i class="fa-solid fa-robot"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass-chart"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-toolbox"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-newspaper"></i></a></li>
-            </ul>
-        </div>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="" class="active"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+            <li><a href=""><i class="fa-solid fa-hexagon-nodes"></i>&nbsp;AI Technology</a></li>
+            <li><a href=""><i class="fa-solid fa-robot"></i>&nbsp;Machine Learning</a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass-chart"></i>&nbsp;Deep Learning</a></li>
+            <li><a href=""><i class="fa-solid fa-toolbox"></i>&nbsp;AI Tools</a></li>
+            <li><a href=""><i class="fa-solid fa-newspaper"></i>&nbsp;AI News</a></li>
+        </ul>
     </nav>
     <!-- Heroes -->
     <section>
-        <div class="wrapper">
-            <div class="hero-content">
+        <div class="hero-content">
+            <div class="wrapper">
                 <h1><i class="fa-solid fa-rocket"></i>&nbsp;เนื้อหาแนะนำสำหรับคุณ</h1>
                 <div class="hero-grid">
                     <div class="hero-item">
@@ -104,9 +94,9 @@
                                 <div class="post-header">คำสั่ง CSS สำคัญสำหรับการเขียนเว็บ Responsive <div
                                         class="date"><span class="day">30</span><span>AUG</span></div>
                                 </div>
-                                <img src="https://images.unsplash.com/photo-1720358553488-d332927ce65b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D"
+                                <img class="order-box-img" src="https://images.unsplash.com/photo-1720358553488-d332927ce65b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D"
                                     alt="">
-                                <div class="post-content">
+                                <div class="post-content order-box-content">
                                     ภาพตัวอย่างการแสดงผล responsive บนอุปกรณ์ต่างๆ
                                     รวมคำสั่ง CSS ที่จำเป็นสำหรับการสร้างเว็บไซต์ที่รองรับทุกขนาดหน้าจอ เริ่มจาก media
                                     queries,
@@ -133,67 +123,77 @@
                                     เพื่อช่วยให้เข้าใจการเลือกใช้ display
                                     property ที่เหมาะสม
                                 </div>
-                                <table class="diff-tb">
-                                    <thead>
-                                        <tr>
-                                            <th>คุณสมบัติ</th>
-                                            <th>display: block</th>
-                                            <th>display: inline-block</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>การจัดเรียงองค์ประกอบ</td>
-                                            <td class="text-lowopa"><i
-                                                    class="fa-solid fa-box-open"></i>&nbsp;แต่ละตัวอยู่บรรทัดใหม่</td>
-                                            <td class="text-primary"><i
-                                                    class="fa-solid fa-check"></i>&nbsp;การจัดเรียงองค์ประกอบ</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ความกว้างเริ่มต้น</td>
-                                            <td class="text-danger"><i
-                                                    class="fa-solid fa-xmark"></i>&nbsp;กินพื้นที่เต็มความกว้าง (100%)
-                                            </td>
-                                            <td class="text-primary"><i
-                                                    class="fa-solid fa-check"></i>&nbsp;ตามเนื้อหาภายใน (auto)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>การกำหนด width และ height</td>
-                                            <td class="text-primary"><i class="fa-solid fa-check"></i>&nbsp;กำหนดได้ทั้ง
-                                                width และ height</td>
-                                            <td class="text-primary"><i class="fa-solid fa-check"></i>&nbsp;กำหนดได้ทั้ง
-                                                width และ height</td>
-                                        </tr>
-                                        <tr>
-                                            <td>margin และ padding </td>
-                                            <td class="text-primary"><i
-                                                    class="fa-solid fa-check"></i>&nbsp;ใช้ได้ครบทุกทิศทาง</td>
-                                            <td class="text-primary"><i
-                                                    class="fa-solid fa-check"></i>&nbsp;ใช้ได้ครบทุกทิศทาง</td>
-                                        </tr>
-                                        <tr>
-                                            <td>vertical-align</td>
-                                            <td class="text-danger"><i class="fa-solid fa-xmark"></i>&nbsp;ไม่มีผลกับ
-                                                block element</td>
-                                            <td class="text-primary"><i class="fa-solid fa-check"></i>&nbsp;สามารถใช้ได้
-                                                (top, middle, bottom)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ช่องว่างระหว่างองค์ประกอบ</td>
-                                            <td class="text-danger"><i class="fa-solid fa-ban"></i>&nbsp;
-                                                ไม่มีปัญหาช่องว่าง </td>
-                                            <td class="text-danger"><i class="fa-solid fa-xmark"></i>&nbsp;มีช่องว่างจาก
-                                                whitespace ใน HTML</td>
-                                        </tr>
-                                        <tr>
-                                            <td>การใช้งานที่เหมาะสม</td>
-                                            <td class="text-lowopa"><i class="fa-solid fa-newspaper"></i>&nbsp;div,
-                                                section, header, footer</td>
-                                            <td class="text-lowopa"><i class="fa-solid fa-bullseye"></i>&nbsp;navigation
-                                                menu, button, groups</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="diff-tb">
+                                        <thead>
+                                            <tr>
+                                                <th>คุณสมบัติ</th>
+                                                <th>display: block</th>
+                                                <th>display: inline-block</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>การจัดเรียงองค์ประกอบ</td>
+                                                <td class="text-lowopa"><i
+                                                        class="fa-solid fa-box-open"></i>&nbsp;แต่ละตัวอยู่บรรทัดใหม่
+                                                </td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;การจัดเรียงองค์ประกอบ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ความกว้างเริ่มต้น</td>
+                                                <td class="text-danger"><i
+                                                        class="fa-solid fa-xmark"></i>&nbsp;กินพื้นที่เต็มความกว้าง
+                                                    (100%)
+                                                </td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;ตามเนื้อหาภายใน (auto)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>การกำหนด width และ height</td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;กำหนดได้ทั้ง
+                                                    width และ height</td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;กำหนดได้ทั้ง
+                                                    width และ height</td>
+                                            </tr>
+                                            <tr>
+                                                <td>margin และ padding </td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;ใช้ได้ครบทุกทิศทาง</td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;ใช้ได้ครบทุกทิศทาง</td>
+                                            </tr>
+                                            <tr>
+                                                <td>vertical-align</td>
+                                                <td class="text-danger"><i
+                                                        class="fa-solid fa-xmark"></i>&nbsp;ไม่มีผลกับ
+                                                    block element</td>
+                                                <td class="text-primary"><i
+                                                        class="fa-solid fa-check"></i>&nbsp;สามารถใช้ได้
+                                                    (top, middle, bottom)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ช่องว่างระหว่างองค์ประกอบ</td>
+                                                <td class="text-danger"><i class="fa-solid fa-ban"></i>&nbsp;
+                                                    ไม่มีปัญหาช่องว่าง </td>
+                                                <td class="text-danger"><i
+                                                        class="fa-solid fa-xmark"></i>&nbsp;มีช่องว่างจาก
+                                                    whitespace ใน HTML</td>
+                                            </tr>
+                                            <tr>
+                                                <td>การใช้งานที่เหมาะสม</td>
+                                                <td class="text-lowopa"><i class="fa-solid fa-newspaper"></i>&nbsp;div,
+                                                    section, header, footer</td>
+                                                <td class="text-lowopa"><i
+                                                        class="fa-solid fa-bullseye"></i>&nbsp;navigation
+                                                    menu, button, groups</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <div class="post-content">
                                     สรุป: display: block เหมาะสำหรับโครงสร้างหลักของหน้าเว็บ ส่วน display: inline-block
                                     เหมาะสำหรับการสร้างเมนู
@@ -286,7 +286,7 @@
                     </div>
                     <div class="right">
                         <aside>
-                            <div class="widget widget-blue">
+                            <div class="widget widget-blue order-w-artist">
                                 <h2><i class="fa-solid fa-circle-info"></i> เกี่ยวกับผู้เขียน</h2>
                                 <div class="author-info" style="text-align: center; margin-bottom: 15px;">
                                     <div style="line-height: 1; margin: 1rem 0;">
@@ -295,15 +295,18 @@
                                     </div>
                                     <p>ผมชื่อ <strong>Jiramate</strong> เขียนบล็อกเกี่ยวกับ Startup การตลาด
                                         การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ Startup</p>
+                                    <div
+                                        style="padding: 1rem; background-color: #f5f5f5; text-align: center; width: 100%; height: 350px; display: flex; align-items: center; justify-content: center;">
+                                        รูปผู้เขียน</div>
                                 </div>
 
-                                <div class="input-group">
+                                <div class="input-group order-w-facebook">
                                     <a href="#" class="btn btn-blue btn-full">
                                         <i class="fa-brands fa-facebook"></i>&nbsp; กดติดตามใน Facebook
                                     </a>
                                 </div>
                             </div>
-                            <div class="widget widget-green">
+                            <div class="widget widget-green order-w-mail">
                                 <h2><i class="fa-solid fa-envelope"></i> รับข่าวสารใหม่</h2>
                                 <div class="input-group">
                                     <label for=""><i class="fa-solid fa-user"></i>ชื่อของคุณ</label>
@@ -327,34 +330,18 @@
                                 <button class="btn btn-green btn-full"><i class="fa-solid fa-paper-plane"></i>&nbsp;
                                     สมัครเลย!</button>
                             </div>
-                            <div class="widget widget-red">
-                                <h2><i class="fa-solid fa-envelope"></i> รับข่าวสารใหม่</h2>
-                                <div class="input-group">
-                                    <label for="name-news"><i class="fa-solid fa-user"></i> ชื่อของคุณ</label>
-                                    <input type="text" id="name-news" class="form-control form-control-red"
-                                        placeholder="ป้อนชื่อของคุณ">
-                                </div>
-
-                                <div class="input-group">
-                                    <label for="email-news"><i class="fa-solid fa-envelope"></i> อีเมล</label>
-                                    <input type="email" id="email-news" class="form-control form-control-red"
-                                        placeholder="john.doe@mail.co">
-                                </div>
-
-                                <div class="input-group">
-                                    <label for="interest"><i class="fa-solid fa-star-of-life"></i>
-                                        สนใจเนื้อหาด้านไหน</label>
-                                    <select id="interest" class="form-control form-control-red">
-                                        <option value="all">ทุกหัวข้อ</option>
-                                        <option value="some">บางหัวข้อ</option>
-                                        <option value="custom">กำหนดเอง</option>
-                                    </select>
-                                </div>
-
-                                <button class="btn btn-red btn-full"><i class="fa-solid fa-paper-plane"></i>&nbsp;
-                                    สมัครเลย!</button>
+                            <div class="widget order-w-like">
+                                <h2>Facebook Like</h2>
+                                <div style="padding: 1rem; background-color: #f5f5f5; text-align: center;">กล่อง
+                                    Facebook Like (ตัวอย่าง) <br>203,779 คนถูกใจ</div>
                             </div>
-                            <div class="widget widget-blue">
+                            <div class="widget">
+                                <h2>Sponsor</h2>
+                                <div
+                                    style="padding: 1rem; background-color: #f5f5f5; text-align: center; width: 100%; height: 350px; display: flex; align-items: center; justify-content: center;">
+                                    พื้นที่โฆษณา / วิดีโอ</div>
+                            </div>
+                            <div class="widget widget-blue order-w-contact" >
                                 <h2><i class="fa-solid fa-comment-dots"></i> ติดต่อด่วน</h2>
 
                                 <div class="input-group">
@@ -382,14 +369,121 @@
                         </aside>
                     </div>
                 </div>
+                <div style="margin-top: 1rem;">
+
+                    <div class="card">
+                        <div class="post-headline">CATEGORY ARCHIVES: <b>RESPONSIVE DESIGN</b></div>
+                        <div class="post-header">ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2549 <div class="date">
+                                <span class="day">3</span><span>MAR</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            สรุปข้อมูลราคาทองคําแท่งในประเทศชนิด 96.5% เริ่มตั้งแต่ปี 2549 ถึงปีปัจจุบัน 2568
+                            โดยเป็นการแสดงราคาต่ำสุด ราคาสูงสุดของทุกๆ เดือน รวมถึง
+                            ราคารวมที่ปรับเพิ่มขึ้นหรือลดลงในแต่ละเดือน และสรุปราคารวม สูงสุด ต่ำสุด ประจำปี
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <div class="table-responsive">
+                                <table class="diff-tb gold-table">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">เดือนปี</th>
+                                            <th colspan="3">2569</th>
+                                            <th colspan="3
+                                        ">2568</th>
+                                        </tr>
+                                        <tr>
+                                            <th>ขึ้น/ลง</th>
+                                            <th>ต่ำสุด</th>
+                                            <th>สูงสุด</th>
+                                            <th>ขึ้น/ลง</th>
+                                            <th>ต่ำสุด</th>
+                                            <th>สูงสุด</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>เม.ย.</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><span class="icon down"></span>-1,950</td>
+                                            <td>49,100</td>
+                                            <td>54,800</td>
+                                        </tr>
+                                        <tr>
+                                            <th>มี.ค.</th>
+                                            <td><span class="icon down"></span>-1,700</td>
+                                            <td>78,750</td>
+                                            <td>79,050</td>
+                                            <td><span class="icon up"></span>+3,750</td>
+                                            <td>46,350</td>
+                                            <td>50,100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ก.พ.</th>
+                                            <td><span class="icon up"></span>+3,400</td>
+                                            <td>68,200</td>
+                                            <td>77,600</td>
+                                            <td><span class="icon down"></span>-1,850</td>
+                                            <td>44,600</td>
+                                            <td>47,450</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ม.ค.</th>
+                                            <td><span class="icon up"></span>+9,250</td>
+                                            <td>64,550</td>
+                                            <td>81,950</td>
+                                            <td><span class="icon up"></span>+2,050</td>
+                                            <td>42,550</td>
+                                            <td>44,850</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ทั้งปี</th>
+                                            <td><span class="icon up"></span>+14,350</td>
+                                            <td>64,550</td>
+                                            <td>81,950</td>
+                                            <td><span class="icon up"></span>+22,550</td>
+                                            <td>42,550</td>
+                                            <td>67,400</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="post-tag">
+                            <span>Tags: </span>
+                            <a href="">responsive design</a> <span>•</span>
+                            <a href="">media queries</a> <span>•</span>
+                            <a href="">flexbox</a> <span>•</span>
+                            <a href="">CSS grid</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <p>© 2025 jirathx — All rights reserved.</p>
-        <span>Designed for educational/demo purposes • 674230013</span>
+        <span>Designed for educational/demo purposes • <a href="#">Contact</a></span>
     </footer>
     <script>
+        const sidebarBtn = document.getElementById("sidebarBtn");
+        const navbar = document.getElementById("navbar")
+        let navbarToggle = false;
+        sidebarBtn.addEventListener("click", () => {
+            if (!navbarToggle) {
+                navbar.style.transform = "translateY(0px)"
+                sidebarBtn.innerHTML = `<i class="fa-solid fa-times"></i>`
+                navbarToggle = !navbarToggle;
+            } else {
+                navbar.style.transform = "translateY(-768px)"
+                sidebarBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
+                navbarToggle = !navbarToggle;
+            }
+
+        })
     </script>
 </body>
 
