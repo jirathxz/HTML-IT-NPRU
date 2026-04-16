@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Color Palette (โทนสีหลัก) */
+    --primary-main-color: #A890E4;
+    --primary-dark-color: #8F7DBE;
+    --secondary-main-color: #EFE9FF;
+    --bg-color: #F2F5FF;
+    --text-main: #333333;
+    --text-muted: #888888;
+    
+    /* UI Elements (เงาและการเคลื่อนไหว) */
+    --shadow-soft: 0 8px 24px rgba(168, 144, 228, 0.15);
+    --shadow-hover: 0 12px 32px rgba(168, 144, 228, 0.25);
+    --transition-speed: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* สำคัญ: ป้องกัน Padding ทำให้กล่องใหญ่เกินขนาด */
+    font-family: "Prompt", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* ทำให้รูปภาพย่อขยายตามกล่องเสมอ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Layout พื้นฐาน --- */
+section {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem; 
+    min-height: 80vh; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1120px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    position: sticky; /* ทำให้เมนูติดขอบบนเวลาเลื่อนลง */
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    max-width: 1120px;
+    border-radius: 3rem;
+    box-shadow: var(--shadow-soft); /* เงาบางๆ ให้ Navbar ดูลอยขึ้นมา */
+}
+
+nav .nav-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--primary-main-color);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
+nav ul li a {
+    color: var(--text-muted);
+    transition: color var(--transition-speed);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--primary-main-color);
+}
+
+/* จัดระยะห่างให้กลุ่มปุ่ม Login / Register ใน Nav */
+.nav-btn {
+    display: flex;
+    gap: 12px;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-dark-color);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.btn:hover {
+    background-color: var(--primary-main-color);
+    transform: translateY(-2px); /* เอฟเฟกต์ปุ่มยกตัวขึ้น */
+    box-shadow: var(--shadow-soft);
+}
+
+.btn2 {
+    background-color: var(--secondary-main-color);
+    color: var(--primary-dark-color);
+}
+
+.btn2:hover {
+    background-color: #e2d7ff; /* สีเข้มขึ้นนิดหน่อยตอน Hover */
+}
+
+/* --- Cards & Grid --- */
+.card-grid {
+    display: grid;
+    /* รองรับมือถืออัตโนมัติ ไม่ต้องคอยกำหนดขนาดแบบ Fix */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    width: 100%;
+    box-shadow: var(--shadow-soft);
+}
+
+.card, .card-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;   
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover, .card-secondary:hover {
+    transform: translateY(-5px); /* ทำให้การ์ดลอยขึ้นเวลาเอาเมาส์ชี้ */
+    box-shadow: var(--shadow-hover);
+}
+
+.card {
+    background-color: var(--primary-main-color);
+    color: #fff;
+}
+
+.card-secondary {
+    background-color: var(--secondary-main-color);
+    color: var(--primary-dark-color);
+}
+
+.card img, .card-secondary img {
+    width: 100%; 
+    border-radius: 1rem;
+    object-fit: cover; /* ตัดรูปให้สวยงามไม่บิดเบี้ยว */
+    max-height: 305px;
+}
+
+.card .card-title, .card-secondary .card-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* --- Footer --- */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; /* แยกข้อความกับไอคอนซ้าย-ขวา */
+    background-color: #fff;
+    padding: 1rem 2rem;
+    align-items: center;
+    width: 100%;
+    border-radius: 3rem;
+    box-shadow: var(--shadow-soft);
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* จัดสไตล์และระยะห่างให้ Social Icons ใน Footer */
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials a {
+    color: var(--text-muted);
+    font-size: 20px;
+    transition: color var(--transition-speed);
+}
+
+.footer-socials a:hover {
+    color: var(--primary-main-color);
+}
+
+/* --- Mobile Responsive (สำหรับหน้าจอเล็กกว่า 768px) --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    .nav-btn {
+        width: 100%;
+        justify-content: center; /* จัดปุ่มให้อยู่กึ่งกลางบนมือถือ */
+    }
+    footer .container {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
